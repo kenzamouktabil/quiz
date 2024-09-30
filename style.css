@@ -562,3 +562,17 @@ body {
         padding: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .main {
+        background-size: cover; /* Make sure the image covers the full area */
+        background-attachment: scroll; /* Prevent issues with fixed backgrounds on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        background-size: cover; /* Make sure the image covers the full area */
+        background-attachment: scroll; /* Prevent fixed background issues on very small screens */
+    }
+}
