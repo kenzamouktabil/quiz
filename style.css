@@ -525,16 +525,15 @@ body {
 
 
 
-
-
 /* Media Queries for responsiveness */
 
 /* For tablets and larger mobile devices */
-@media screen and (max-width: 768px) {x
+@media screen and (max-width: 768px) {
     .main {
         background-size: 150%; /* Zoom the background */
         background-repeat: repeat; /* Repeat the background */
     }
+
     .header {
         padding: 10px 5%;
     }
@@ -587,6 +586,20 @@ body {
     .result-box h2 {
         font-size: 36px;
     }
+
+    .percentage-container .circular-progress {
+        width: 180px; /* Smaller circular progress for tablets */
+        height: 180px;
+    }
+
+    .percentage-container .circular-progress::before {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circular-progress .progress-value {
+        font-size: 36px;
+    }
 }
 
 /* For smaller mobile devices */
@@ -595,6 +608,7 @@ body {
         background-size: 200%; /* Further zoom the background */
         background-repeat: repeat; /* Repeat the background */
     }
+
     .header {
         padding: 5px 5%;
     }
@@ -639,11 +653,21 @@ body {
     }
 
     .percentage-container .circular-progress {
-        width: 180px;
-        height: 180px;
+        width: 150px; /* Smaller circular progress for mobile */
+        height: 150px;
     }
 
-    .percentage-container .progress-value {
-        font-size: 32px;
+    .percentage-container .circular-progress::before {
+        width: 110px; /* Adjusted for smaller screens */
+        height: 110px;
+    }
+
+    .circular-progress .progress-value {
+        font-size: 32px; /* Smaller font size for progress value on mobile */
+    }
+
+    .result-box .buttons button {
+        width: 100px; /* Adjust button size for smaller screens */
+        height: 40px;
     }
 }
