@@ -519,3 +519,46 @@ body {
     background: #c40094;
     color: #fff;
 }
+
+
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .home-content .start-btn {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .quiz-box {
+        padding: 10px;
+    }
+
+    .result-box {
+        padding: 10px;
+    }
+}
