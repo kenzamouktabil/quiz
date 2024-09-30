@@ -530,7 +530,11 @@ body {
 /* Media Queries for responsiveness */
 
 /* For tablets and larger mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {x
+    .main {
+        background-size: 150%; /* Zoom the background */
+        background-repeat: repeat; /* Repeat the background */
+    }
     .header {
         padding: 10px 5%;
     }
@@ -587,6 +591,10 @@ body {
 
 /* For smaller mobile devices */
 @media screen and (max-width: 480px) {
+    .main {
+        background-size: 200%; /* Further zoom the background */
+        background-repeat: repeat; /* Repeat the background */
+    }
     .header {
         padding: 5px 5%;
     }
