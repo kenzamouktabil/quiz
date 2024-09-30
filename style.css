@@ -565,14 +565,16 @@ body {
 
 @media (max-width: 768px) {
     .main {
-        background-size: cover; /* Make sure the image covers the full area */
-        background-attachment: scroll; /* Prevent issues with fixed backgrounds on mobile */
+        background-size: cover; /* Covers the entire background area */
+        background-position: center; /* Ensures the background stays centered */
+        background-attachment: scroll; /* Prevent fixed attachment issues on mobile */
     }
 }
 
 @media (max-width: 480px) {
     .main {
-        background-size: cover; /* Make sure the image covers the full area */
-        background-attachment: scroll; /* Prevent fixed background issues on very small screens */
+        background-size: cover; /* Full coverage on small screens */
+        background-position: center; /* Keeps the image centered */
+        background-attachment: scroll; /* Prevents the image from splitting on mobile */
     }
 }
