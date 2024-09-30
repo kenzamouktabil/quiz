@@ -54,11 +54,12 @@ body {
 
 .main{
     min-height: 100vh ;
-    background: url('2\ \(2\).jpg')no-repeat;
+    background: url('2\ \(2\).jpg')no-repeat center center;
     background-size: cover;
     background-position: center;
     pointer-events: auto;
     transition: .3s ease;
+    background-attachment: scroll;
 }
 
 .main.active{
