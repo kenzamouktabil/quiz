@@ -524,58 +524,118 @@ body {
 
 
 
-/* For very small mobile screens */
-@media (max-width: 480px) {
+
+
+
+/* Media Queries for responsiveness */
+
+/* For tablets and larger mobile devices */
+@media screen and (max-width: 768px) {
     .header {
-        flex-direction: column;
+        padding: 10px 5%;
     }
 
-    .navbar {
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .logo {
+        font-size: 24px;
     }
 
     .navbar a {
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 16px;
+        margin-left: 20px;
     }
 
     .home-content h1 {
-        font-size: 30px;
+        font-size: 48px;
     }
 
     .home-content p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .home-content .start-btn {
-        width: 120px;
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .popup-info {
+        width: 80%;
+    }
+
+    .quiz-section .quiz-box {
+        width: 90%;
+    }
+
+    .quiz-box h1 {
+        font-size: 24px;
+    }
+
+    .quiz-header span {
+        font-size: 16px;
+    }
+
+    .quiz-footer .next-btn {
+        width: 80px;
         height: 35px;
         font-size: 12px;
     }
 
-    .quiz-box {
-        padding: 10px;
-    }
-
-    .result-box {
-        padding: 10px;
+    .result-box h2 {
+        font-size: 36px;
     }
 }
 
-@media (max-width: 768px) {
-    .main {
-        background-size: cover; /* Ensure the image covers the screen */
-        background-attachment: scroll; /* Prevents issues with fixed background on mobile */
+/* For smaller mobile devices */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 5px 5%;
     }
-}
 
-@media (max-width: 480px) {
-    .main {
-        background-size: cover; /* Same fix for smaller screens */
-        background-position: center; /* Keeps image centered */
-        background-attachment: scroll; /* Avoids background issues on mobile */
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .home-content .start-btn {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .popup-info h2 {
+        font-size: 28px;
+    }
+
+    .popup-info .info {
+        font-size: 12px;
+    }
+
+    .quiz-section .quiz-box {
+        width: 95%;
+    }
+
+    .result-box h2 {
+        font-size: 28px;
+    }
+
+    .percentage-container .circular-progress {
+        width: 180px;
+        height: 180px;
+    }
+
+    .percentage-container .progress-value {
+        font-size: 32px;
     }
 }
